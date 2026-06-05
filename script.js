@@ -36,6 +36,9 @@ const translations = {
     featureThreeCopy: "Precio claro, confirmación directa y contrato incluido. Menos llamadas frías, más bolo cerrado.",
     featureFourTitle: "Eventos privados",
     featureFourCopy: "Cumpleaños, empresas, despedidas y aniversarios. Humor ajustado al contexto, no al azar.",
+    humanEyebrow: "0 IA en el escenario",
+    humanTitle: "La gracia sigue siendo humana.",
+    humanCopy: "En LatePunch valoramos cómicos de verdad: criterio, oficio, timing y presencia. La IA puede ordenar cosas; hacer reír a tu audiencia sigue siendo otro deporte.",
     stepsEyebrow: "Cómo funciona",
     stepsTitle: "De “¿dónde encuentro un cómico?” a reservado en minutos.",
     stepOneTitle: "Cuéntanos tu evento",
@@ -120,6 +123,9 @@ const translations = {
     featureThreeCopy: "Clear pricing, direct confirmation and contract included. Fewer cold calls, more booked gigs.",
     featureFourTitle: "Private events",
     featureFourCopy: "Birthdays, company events, bachelor parties and anniversaries. Humor matched to the context, not left to chance.",
+    humanEyebrow: "0 AI on stage",
+    humanTitle: "The funny part is still human.",
+    humanCopy: "At LatePunch, we value real comedians: judgement, craft, timing and presence. AI can organize things; making your audience laugh is still a different sport.",
     stepsEyebrow: "How it works",
     stepsTitle: "From “where do I find a comedian?” to booked in minutes.",
     stepOneTitle: "Tell us about your event",
@@ -285,3 +291,4 @@ form.addEventListener("submit", async (event) => {
 });
 
 applyLanguage("es");
+

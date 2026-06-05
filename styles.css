@@ -115,6 +115,45 @@ p { font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.55; }
 .feature-grid article:nth-child(2), .feature-grid article:nth-child(4) { margin-top: 34px; }
 .feature-grid span { color: var(--red); font-family: "Abril Fatface", serif; font-size: 3.2rem; }
 
+.human-comedy {
+  min-height: 520px;
+  display: grid;
+  place-items: center;
+  background: var(--cream);
+  border-top: 3px solid var(--black);
+  border-bottom: 3px solid var(--black);
+}
+.human-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin-left: auto;
+  padding: clamp(28px, 5vw, 56px);
+  border: 3px solid var(--black);
+  background: rgba(245, 240, 226, .9);
+  box-shadow: 9px 9px 0 var(--black);
+}
+.human-copy h2 { max-width: 680px; }
+.human-copy p:last-child { max-width: 650px; }
+.human-doodle {
+  position: absolute;
+  left: clamp(-40px, 4vw, 80px);
+  top: 50%;
+  width: min(48vw, 560px);
+  transform: translateY(-50%) rotate(-5deg);
+  opacity: .65;
+}
+.doodle-line, .doodle-clock {
+  fill: none;
+  stroke: var(--black);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.doodle-clock { stroke: var(--blue); }
+.doodle-dot { fill: var(--red); stroke: var(--black); stroke-width: 5; }
+.doodle-star { fill: var(--yellow); stroke: var(--black); stroke-width: 5; }
+
 .steps { background: var(--black); color: var(--cream); }
 .steps .eyebrow { color: var(--yellow); }
 .zigzag { position: absolute; inset: auto 5% 10% 5%; width: 90%; height: 120px; opacity: .38; }
@@ -184,10 +223,14 @@ input[aria-invalid="true"] { outline: 4px solid var(--red); }
   .hero-star { width: 135px; right: -24px; top: 70px; }
   .hero-eye, .red-blob, .moon { display: none; }
   .section-grid, .form-shell, .comedians { grid-template-columns: 1fr; }
+  .human-comedy { min-height: auto; place-items: stretch; }
+  .human-copy { margin-left: 0; }
+  .human-doodle { position: relative; left: auto; top: auto; width: 100%; max-width: 300px; margin: 0 auto 20px; transform: rotate(-4deg); opacity: .55; }
   .stats, .feature-grid, .step-grid { grid-template-columns: 1fr; }
   .feature-grid article:nth-child(2), .feature-grid article:nth-child(4) { margin-top: 0; }
   .melting-clock { position: static; width: 120px; margin-bottom: 16px; }
 }
+
 
 
 
