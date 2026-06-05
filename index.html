@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LatePunch | Cómicos para eventos privados</title>
+  <meta name="description" content="LatePunch conecta clientes con cómicos de stand-up para eventos privados. Apúntate a la lista de espera." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" aria-label="Navegación principal" data-i18n-attr="aria-label:headerAria">
+    <a class="brand" href="#top" aria-label="LatePunch inicio" data-i18n-attr="aria-label:brandAria">LatePunch</a>
+    <nav class="nav-links" aria-label="Secciones" data-i18n-attr="aria-label:navAria">
+      <a href="#como-funciona" data-i18n="navHow">Cómo funciona</a>
+      <a href="#comicos" data-i18n="navComedians">Para cómicos</a>
+      <a class="nav-cta" href="#lista-espera" data-i18n="navCta">Apúntate</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-toggle" role="group" aria-label="Selector de idioma" data-i18n-attr="aria-label:languageAria">
+        <button type="button" class="active" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" data-i18n="menu" data-i18n-attr="aria-label:menuAria">Menú</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-texture" aria-labelledby="hero-title">
+      <svg class="shape hero-star float-a" viewBox="0 0 160 160" aria-hidden="true"><path d="M76 7 93 55l48-11-34 37 31 41-52-14-25 44-5-52-51-9 48-24z" /></svg>
+      <svg class="shape hero-eye float-b" viewBox="0 0 180 90" aria-hidden="true"><path d="M10 48C38 8 122 4 170 42c-28 38-108 52-160 6Z" /><circle cx="87" cy="42" r="16" /></svg>
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="heroEyebrow">Lista de espera abierta</p>
+        <h1 id="hero-title" data-i18n="heroTitle">LatePunch encuentra al cómico perfecto para tu evento. Aunque parezca imposible.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">La primera plataforma que conecta clientes con cómicos de stand-up para eventos privados. Por estilo, por tono, por humor. No por pura disponibilidad.</p>
+        <div class="cta-row">
+          <a class="button button-primary" href="#lista-espera" data-lead-link="client" data-i18n="heroClientCta">Quiero contratar un cómico</a>
+          <a class="button button-secondary" href="#lista-espera" data-lead-link="comedian" data-i18n="heroComedianCta">Soy cómico y quiero bolos</a>
+        </div>
+        <p class="microcopy" data-i18n="heroMicro">Sin compromiso. Te avisamos cuando lancemos.</p>
+      </div>
+    </section>
+
+    <section class="problem" aria-labelledby="problem-title">
+      <svg class="shape red-blob" viewBox="0 0 220 220" aria-hidden="true"><path d="M51 24c47-35 121-11 147 42 22 46-2 110-49 137-45 26-111 10-139-32-29-44-6-111 41-147Z" /></svg>
+      <div class="section-grid">
+        <div>
+          <p class="eyebrow" data-i18n="problemEyebrow">El gap</p>
+          <h2 id="problem-title" data-i18n="problemTitle">Contratar un cómico para un evento privado sigue siendo raro. Demasiado raro.</h2>
+        </div>
+        <p data-i18n="problemCopy">Si quieres contratar un DJ, hay diez plataformas. Un fotógrafo, igual. Un cómico de stand-up para una cena de empresa, un cumpleaños o una despedida: nadie sabe por dónde empezar.</p>
+      </div>
+      <div class="brush-line" aria-hidden="true"></div>
+      <div class="stats" aria-label="Datos del mercado" data-i18n-attr="aria-label:statsAria">
+        <p><strong>0</strong><span data-i18n="statOne">plataformas especializadas en comedia privada</span></p>
+        <p><strong>500+</strong><span data-i18n="statTwo">euros como precio estándar confirmado por profesionales activos</span></p>
+        <p><strong>2.000</strong><span data-i18n="statThree">búsquedas sin respuesta útil</span></p>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <p class="eyebrow" data-i18n="featuresEyebrow">La plataforma</p>
+      <h2 id="features-title" data-i18n="featuresTitle">Descubrimiento por estilo. Contratación con garantías.</h2>
+      <div class="feature-grid">
+        <article><span>01</span><h3 data-i18n="featureOneTitle">Matching por humor</h3><p data-i18n="featureOneCopy">Absurdo, observacional, provocador, familiar o negro. Cada cómico tiene su voz; cada evento, su audiencia.</p></article>
+        <article><span>02</span><h3 data-i18n="featureTwoTitle">Clips reales</h3><p data-i18n="featureTwoCopy">Ves al cómico en acción antes de contratar. Nada de bios genéricas con sonrisas sospechosas.</p></article>
+        <article><span>03</span><h3 data-i18n="featureThreeTitle">Sin fricción</h3><p data-i18n="featureThreeCopy">Precio claro, confirmación directa y contrato incluido. Menos llamadas frías, más bolo cerrado.</p></article>
+        <article><span>04</span><h3 data-i18n="featureFourTitle">Eventos privados</h3><p data-i18n="featureFourCopy">Cumpleaños, empresas, despedidas y aniversarios. Humor ajustado al contexto, no al azar.</p></article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="steps" aria-labelledby="steps-title">
+      <svg class="zigzag" viewBox="0 0 900 120" aria-hidden="true"><path d="M10 70 C120 10 170 115 280 54 S470 4 560 62 720 120 890 30" /></svg>
+      <p class="eyebrow" data-i18n="stepsEyebrow">Cómo funciona</p>
+      <h2 id="steps-title" data-i18n="stepsTitle">De “¿dónde encuentro un cómico?” a reservado en minutos.</h2>
+      <div class="step-grid">
+        <article><strong>01</strong><h3 data-i18n="stepOneTitle">Cuéntanos tu evento</h3><p data-i18n="stepOneCopy">Tipo, fecha, grupo y tono que buscas. Cuanto más contexto, mejor el match.</p></article>
+        <article><strong>02</strong><h3 data-i18n="stepTwoTitle">Descubre por estilo</h3><p data-i18n="stepTwoCopy">Filtra por humor, experiencia y disponibilidad. Ve clips reales actuando.</p></article>
+        <article><strong>03</strong><h3 data-i18n="stepThreeTitle">Elige y reserva</h3><p data-i18n="stepThreeCopy">Precio claro y contratación directa. Sin intermediarios innecesarios.</p></article>
+        <article><strong>04</strong><h3 data-i18n="stepFourTitle">El evento</h3><p data-i18n="stepFourCopy">El cómico llega preparado. Tu evento tiene un momento que se recuerda.</p></article>
+      </div>
+    </section>
+
+    <section class="mvp" aria-labelledby="mvp-title">
+      <div class="mvp-box">
+        <svg class="melting-clock" viewBox="0 0 170 130" aria-hidden="true"><path d="M35 18h80c23 0 42 19 42 42 0 19-13 36-31 41-14 4-23-6-21-20l3-22H62l-4 35c-2 16-21 22-33 11C13 94 12 74 25 62l20-18C31 41 24 31 35 18Z" /><circle cx="89" cy="58" r="25" /><path d="M89 42v18l14 7" /></svg>
+        <p class="badge" data-i18n="mvpBadge">Mientras construimos la plataforma</p>
+        <h2 id="mvp-title" data-i18n="mvpTitle">¿Tienes un evento próximo? Lo gestionamos nosotros.</h2>
+        <p data-i18n="mvpCopy">LatePunch está en desarrollo. Si tienes un evento próximo, podemos ayudarte a mano. Y si no es inminente pero piensas: “necesito un cómico, esta plataforma me iría muy bien”, apúntate y te avisamos cuando lancemos.</p>
+        <a class="button button-dark" href="#lista-espera" data-lead-link="client" data-i18n="mvpCta">Me iría bien LatePunch</a>
+      </div>
+    </section>
+
+    <section id="lista-espera" class="waitlist" aria-labelledby="waitlist-title">
+      <svg class="shape moon float-a" viewBox="0 0 120 120" aria-hidden="true"><path d="M82 10C55 17 36 42 36 70c0 19 9 36 23 47C31 110 11 86 11 58 11 29 33 5 82 10Z" /></svg>
+      <div class="form-shell">
+        <div>
+          <p class="eyebrow" data-i18n="waitlistEyebrow">Lista de espera</p>
+          <h2 id="waitlist-title" data-i18n="waitlistTitle">Apúntate. Te avisamos cuando lancemos.</h2>
+          <p data-i18n="waitlistCopy">Y te mantenemos al día del proceso. Sin spam. Sin venderte humo con PowerPoint.</p>
+        </div>
+
+        <div class="form-panel">
+          <div class="lead-toggle" role="tablist" aria-label="Tipo de registro" data-i18n-attr="aria-label:leadToggleAria">
+            <button type="button" class="active" data-lead-type="client" data-i18n="clientToggle">Quiero contratar</button>
+            <button type="button" data-lead-type="comedian" data-i18n="comedianToggle">Soy cómico</button>
+          </div>
+
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          <form id="waitlist-form" novalidate>
+            <input type="hidden" name="lead_type" id="lead-type" value="client" />
+            <input type="hidden" name="language" id="form-language" value="es" />
+            <div class="field" data-client-field>
+              <label for="name" data-i18n="nameLabel">Nombre</label>
+              <input id="name" name="name" type="text" autocomplete="name" />
+            </div>
+            <div class="field hidden" data-comedian-field>
+              <label for="stage-name" data-i18n="stageNameLabel">Nombre artístico</label>
+              <input id="stage-name" name="stage_name" type="text" />
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="emailLabel">Email *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field" data-client-field>
+              <label for="event-type" data-i18n="eventTypeLabel">Tipo de evento</label>
+              <select id="event-type" name="event_type">
+                <option value="Cumpleaños" data-i18n="eventBirthday">Cumpleaños</option>
+                <option value="Cena de empresa" data-i18n="eventCompanyDinner">Cena de empresa</option>
+                <option value="Despedida" data-i18n="eventBachelor">Despedida</option>
+                <option value="Aniversario" data-i18n="eventAnniversary">Aniversario</option>
+                <option value="Evento corporativo" data-i18n="eventCorporate">Evento corporativo</option>
+                <option value="Otro" data-i18n="eventOther">Otro</option>
+              </select>
+            </div>
+            <div class="field hidden" data-comedian-field>
+              <label for="city" data-i18n="cityLabel">Ciudad donde actúas</label>
+              <input id="city" name="city" type="text" />
+            </div>
+            <div class="field hidden" data-comedian-field>
+              <label for="private-experience" data-i18n="experienceLabel">Experiencia en privados</label>
+              <select id="private-experience" name="private_experience">
+                <option value="Hago bolos privados regularmente" data-i18n="experienceRegular">Hago bolos privados regularmente</option>
+                <option value="Alguna experiencia" data-i18n="experienceSome">Alguna experiencia</option>
+                <option value="Sin experiencia en privados pero me interesa" data-i18n="experienceInterested">Sin experiencia en privados pero me interesa</option>
+              </select>
+            </div>
+            <div class="field hidden" data-comedian-field>
+              <label for="clip" data-i18n="clipLabel">Link a clip o redes</label>
+              <input id="clip" name="clip_url" type="url" placeholder="https://" />
+            </div>
+            <button class="button button-primary submit-button" type="submit" data-i18n="submitClient">Apuntarme</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="comicos" class="comedians" aria-labelledby="comedians-title">
+      <div>
+        <p class="eyebrow" data-i18n="comediansEyebrow">Para cómicos</p>
+        <h2 id="comedians-title" data-i18n="comediansTitle">Nuevos bolos, sin depender de tu red actual.</h2>
+        <p data-i18n="comediansCopy">Si eres cómico con experiencia en eventos privados, queremos trabajar contigo. Clientes que te eligen porque quieren tu humor específicamente, no porque eras el único libre ese día.</p>
+        <a class="button button-secondary" href="#lista-espera" data-lead-link="comedian" data-i18n="comediansCta">Apúntame como cómico</a>
+      </div>
+      <svg class="stage-figure" viewBox="0 0 260 260" aria-hidden="true"><path d="M132 21c18 34 17 63-4 88 37-12 62 1 74 40-36-14-65-8-86 17 6 31-7 53-40 66 10-36 4-65-20-86-29 3-49-12-59-46 34 13 62 6 84-20-3-31 12-51 51-59Z" /><circle cx="142" cy="92" r="18" /></svg>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>LatePunch</strong>
+    <span data-i18n="footerBuild">En construcción · 2026</span>
+    <span data-i18n="footerLine">Nadie debería buscar un cómico en Google.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

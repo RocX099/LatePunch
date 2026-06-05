@@ -1,0 +1,9 @@
+﻿.git
+.netlify
+node_modules
+dev-server*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+README.md
+netlify.toml
