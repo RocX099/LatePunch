@@ -1,7 +1,9 @@
 ﻿FROM nginx:1.27-alpine
 
 COPY index.html /usr/share/nginx/html/index.html
+COPY plataforma.html /usr/share/nginx/html/plataforma.html
 COPY styles.css /usr/share/nginx/html/styles.css
 COPY script.js /usr/share/nginx/html/script.js
+COPY platform.js /usr/share/nginx/html/platform.js
 
 EXPOSE 80
