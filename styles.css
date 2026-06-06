@@ -88,6 +88,38 @@ p { font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.55; }
 .hero-copy { max-width: 720px; font-size: clamp(1.15rem, 2vw, 1.65rem); }
 .cta-row { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 30px; }
 .microcopy { font-size: .95rem; font-weight: 800; }
+.dali-gate {
+  position: relative;
+  display: block;
+  max-width: 760px;
+  margin-top: 34px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 4px solid var(--black);
+  background: var(--yellow);
+  box-shadow: 12px 12px 0 var(--black);
+  font-family: "Abril Fatface", serif;
+  font-size: clamp(2rem, 4.8vw, 5.2rem);
+  line-height: .9;
+  letter-spacing: -.04em;
+  transform: rotate(-1.5deg);
+}
+.dali-gate::after {
+  content: "";
+  position: absolute;
+  right: clamp(14px, 3vw, 32px);
+  bottom: -28px;
+  width: 96px;
+  height: 54px;
+  border: 4px solid var(--black);
+  border-top: 0;
+  background: var(--red);
+  border-radius: 0 0 80px 80px;
+  transform: rotate(8deg);
+}
+.dali-gate:hover {
+  transform: translate(4px, 4px) rotate(1deg);
+  box-shadow: 5px 5px 0 var(--black);
+}
 .shape { position: absolute; fill: var(--yellow); stroke: var(--black); stroke-width: 5; }
 .hero-star { width: min(30vw, 310px); top: 9%; right: 7%; opacity: .78; transform: rotate(13deg); }
 .hero-eye { width: 210px; left: 4%; bottom: 7%; fill: var(--blue); opacity: .45; }
@@ -153,6 +185,277 @@ p { font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.55; }
 .doodle-clock { stroke: var(--blue); }
 .doodle-dot { fill: var(--red); stroke: var(--black); stroke-width: 5; }
 .doodle-star { fill: var(--yellow); stroke: var(--black); stroke-width: 5; }
+
+.platform {
+  background: var(--cream-deep);
+  border-bottom: 3px solid var(--black);
+}
+.platform-page .site-header { position: relative; }
+.platform-stage {
+  min-height: calc(100svh - 92px);
+  padding-top: clamp(48px, 7vw, 92px);
+}
+.platform-stage .hero-eye {
+  left: auto;
+  right: 5%;
+  top: 90px;
+  bottom: auto;
+}
+.platform-stage h1 {
+  max-width: 900px;
+  font-size: clamp(3.3rem, 8vw, 8.6rem);
+}
+.platform-intro {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: clamp(24px, 6vw, 76px);
+  align-items: end;
+}
+.platform-intro p:last-child { max-width: 620px; font-weight: 800; }
+.platform-intro strong {
+  padding: 3px 8px;
+  background: var(--yellow);
+  border: 2px solid var(--black);
+}
+.humor-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 52px;
+}
+.humor-card {
+  color: var(--black);
+  text-align: left;
+  font: inherit;
+  min-height: 250px;
+  padding: 20px;
+  border: 3px solid var(--black);
+  background: #fff8e8;
+  box-shadow: 6px 6px 0 var(--black);
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.humor-card:hover, .humor-card.active {
+  transform: translate(3px, 3px) rotate(-1deg);
+  box-shadow: 2px 2px 0 var(--black);
+}
+.humor-card.active { background: var(--yellow); }
+.humor-card:nth-child(2), .humor-card:nth-child(5) { margin-top: 28px; }
+.humor-card svg {
+  width: 100%;
+  max-width: 132px;
+  height: 132px;
+  fill: var(--yellow);
+  stroke: var(--black);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.humor-card:nth-child(2) svg { fill: var(--blue); }
+.humor-card:nth-child(3) svg, .humor-card:nth-child(5) svg { fill: var(--red); }
+.humor-card span {
+  display: block;
+  margin-top: 18px;
+  font-family: "Abril Fatface", serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+  line-height: .9;
+}
+.humor-card small {
+  display: block;
+  margin-top: 12px;
+  font-size: .95rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+.ranking-board {
+  display: block;
+  margin-top: 34px;
+  min-height: 430px;
+}
+.ranking-empty {
+  max-width: 760px;
+  padding: 28px;
+  border: 3px dashed var(--black);
+  background: rgba(245, 240, 226, .7);
+  font-weight: 900;
+}
+.ranking-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: 260px repeat(3, minmax(220px, 1fr));
+  gap: 0;
+  border: 3px solid var(--black);
+  background: var(--cream);
+  box-shadow: 10px 10px 0 var(--black);
+}
+.ranking-list h3 {
+  padding: 18px;
+  border-right: 3px solid var(--black);
+  background: var(--black);
+  color: var(--cream);
+  font-family: "Abril Fatface", serif;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  line-height: .9;
+}
+.ranking-list a {
+  display: grid;
+  gap: 8px;
+  min-height: 320px;
+  padding: 24px;
+  background: #fff8e8;
+  transform-origin: center;
+}
+.ranking-list a + a { border-left: 3px solid var(--black); }
+.ranking-list a:nth-of-type(1) { transform: rotate(-2deg); z-index: 3; }
+.ranking-list a:nth-of-type(2) { transform: translateY(22px) rotate(1deg); z-index: 2; }
+.ranking-list a:nth-of-type(3) { transform: translateY(44px) rotate(-1deg); z-index: 1; }
+.ranking-list a:hover { background: var(--yellow); transform: translateY(6px) rotate(0deg); }
+.ranking-list strong {
+  align-self: start;
+  font-family: "Abril Fatface", serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: .9;
+}
+.ranking-list span {
+  align-self: end;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.ranking-list em {
+  width: max-content;
+  padding: 5px 8px;
+  background: var(--yellow);
+  border: 2px solid var(--black);
+  font-style: normal;
+  font-weight: 900;
+}
+.ranking-list b {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 3px 6px;
+  background: var(--red);
+  color: var(--cream);
+  border: 2px solid var(--black);
+  font-size: .7rem;
+  vertical-align: middle;
+}
+.comedian-matcher {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: clamp(28px, 6vw, 76px);
+  align-items: center;
+  margin-top: 58px;
+  padding: clamp(24px, 5vw, 52px);
+  border: 4px solid var(--black);
+  background: var(--cream);
+  box-shadow: 12px 12px 0 var(--black);
+}
+.matcher-copy h2 {
+  max-width: 520px;
+  font-size: clamp(2.4rem, 5vw, 5.4rem);
+}
+.matcher-copy p { max-width: 540px; }
+.matcher-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 26px 0 16px;
+}
+.fake-note {
+  padding: 14px 16px;
+  border: 3px dashed var(--black);
+  background: #fff8e8;
+  font-weight: 900;
+}
+.card-stack-shell {
+  position: relative;
+  min-height: 470px;
+}
+.card-stack {
+  position: relative;
+  min-height: 430px;
+}
+.comedian-card {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: 16px;
+  min-height: 390px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 4px solid var(--black);
+  background: #fff8e8;
+  box-shadow: 8px 8px 0 var(--black);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.comedian-card:hover { background: var(--yellow); }
+.comedian-card strong {
+  max-width: 620px;
+  font-family: "Abril Fatface", serif;
+  font-size: clamp(3rem, 6vw, 6.6rem);
+  line-height: .86;
+  letter-spacing: -.04em;
+}
+.comedian-card span {
+  max-width: 520px;
+  font-weight: 900;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  line-height: 1.35;
+}
+.comedian-card em {
+  width: max-content;
+  padding: 8px 12px;
+  border: 3px solid var(--black);
+  background: var(--yellow);
+  font-style: normal;
+  font-weight: 900;
+}
+.comedian-card b {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 9px 12px;
+  border: 3px solid var(--black);
+  background: var(--red);
+  color: var(--cream);
+  font-size: .9rem;
+  transform: rotate(5deg);
+}
+.placeholder-pill {
+  width: max-content;
+  padding: 7px 10px;
+  border: 3px solid var(--black);
+  background: var(--blue);
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .75rem !important;
+}
+.card-position-0 {
+  z-index: 3;
+  transform: rotate(-1deg);
+}
+.card-position-1 {
+  z-index: 2;
+  opacity: .72;
+  transform: translate(22px, 20px) rotate(2deg) scale(.96);
+}
+.card-position-2 {
+  z-index: 1;
+  opacity: .45;
+  transform: translate(44px, 40px) rotate(-3deg) scale(.92);
+}
+.stack-counter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  border: 3px solid var(--black);
+  background: var(--black);
+  color: var(--cream);
+  font-weight: 900;
+}
 
 .steps { background: var(--black); color: var(--cream); }
 .steps .eyebrow { color: var(--yellow); }
@@ -220,14 +523,29 @@ input[aria-invalid="true"] { outline: 4px solid var(--red); }
   .hero-copy { font-size: 1rem; line-height: 1.42; }
   .cta-row { gap: 12px; margin-top: 22px; }
   .button { width: 100%; min-height: 44px; padding: 12px 16px; }
+  .dali-gate { font-size: clamp(2rem, 11vw, 3.6rem); }
   .hero-star { width: 135px; right: -24px; top: 70px; }
   .hero-eye, .red-blob, .moon { display: none; }
   .section-grid, .form-shell, .comedians { grid-template-columns: 1fr; }
   .human-comedy { min-height: auto; place-items: stretch; }
   .human-copy { margin-left: 0; }
   .human-doodle { position: relative; left: auto; top: auto; width: 100%; max-width: 300px; margin: 0 auto 20px; transform: rotate(-4deg); opacity: .55; }
-  .stats, .feature-grid, .step-grid { grid-template-columns: 1fr; }
+  .stats, .feature-grid, .step-grid, .platform-intro, .humor-grid { grid-template-columns: 1fr; }
   .feature-grid article:nth-child(2), .feature-grid article:nth-child(4) { margin-top: 0; }
+  .humor-card:nth-child(2), .humor-card:nth-child(5) { margin-top: 0; }
+  .platform-stage .hero-eye { display: none; }
+  .comedian-matcher { grid-template-columns: 1fr; padding: 20px; }
+  .card-stack-shell, .card-stack { min-height: 430px; }
+  .comedian-card { min-height: 380px; padding: 22px; }
+  .comedian-card b { top: 18px; right: 18px; }
+  .card-position-1 { transform: translate(10px, 18px) rotate(2deg) scale(.96); }
+  .card-position-2 { transform: translate(20px, 36px) rotate(-3deg) scale(.92); }
+  .ranking-board { min-height: 0; }
+  .ranking-list { grid-template-columns: 1fr; }
+  .ranking-list h3 { border-right: 0; border-bottom: 3px solid var(--black); }
+  .ranking-list a { min-height: 220px; }
+  .ranking-list a + a { border-left: 0; border-top: 3px solid var(--black); }
+  .ranking-list a:nth-of-type(n) { transform: none; }
   .melting-clock { position: static; width: 120px; margin-bottom: 16px; }
 }
 

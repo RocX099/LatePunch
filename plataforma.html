@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LatePunch | Plataforma de matching</title>
+  <meta name="description" content="Prototipo de matching de LatePunch por tipos de humor y cómicos ficticios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="platform-page">
+  <header class="site-header" aria-label="Navegación principal">
+    <a class="brand" href="index.html#top" aria-label="LatePunch inicio">LatePunch</a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="index.html#como-funciona">Cómo funciona</a>
+      <a href="plataforma.html">Plataforma</a>
+      <a href="index.html#comicos">Para cómicos</a>
+      <a class="nav-cta" href="index.html#lista-espera">Apúntate</a>
+    </nav>
+    <div class="header-actions">
+      <a class="button button-secondary platform-back" href="index.html">Volver</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="platform platform-stage" aria-labelledby="platform-title">
+      <svg class="shape hero-eye float-b" viewBox="0 0 180 90" aria-hidden="true"><path d="M10 48C38 8 122 4 170 42c-28 38-108 52-160 6Z" /><circle cx="87" cy="42" r="16" /></svg>
+      <div class="platform-intro">
+        <div>
+          <p class="eyebrow">Prototipo de matching</p>
+          <h1 id="platform-title">Elige el humor. Barajamos el escenario.</h1>
+        </div>
+        <p>Los nombres de cómicos son <strong>ficticios</strong> hasta conectar el backend real. Pulsa un tipo de humor y pasa cartas para ver más opciones recomendadas.</p>
+      </div>
+
+      <div class="humor-grid" aria-label="Tipos de humor">
+        <button class="humor-card active" type="button" data-humor="absurdo">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><path d="M32 94C18 58 49 19 89 27c38 8 46 55 17 75 21-3 36 7 37 27-28 9-57 5-84-13-15 13-33 12-51-3 3-17 13-27 30-30Z" /><circle cx="87" cy="65" r="15" /><path d="M93 24 116 8l2 31" /></svg>
+          <span>Absurdo</span>
+          <small>Lo imposible entra sin llamar.</small>
+        </button>
+        <button class="humor-card" type="button" data-humor="observacional">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><path d="M17 76c29-44 101-45 136 1-31 42-108 43-136-1Z" /><circle cx="78" cy="76" r="24" /><path d="M98 101 133 134" /></svg>
+          <span>Observacional</span>
+          <small>La vida diaria, subrayada en rojo.</small>
+        </button>
+        <button class="humor-card" type="button" data-humor="provocador">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><path d="M77 12 97 59l49-12-36 36 30 43-50-17-27 43-2-52-50-12 49-22Z" /><path d="M64 80h42" /></svg>
+          <span>Provocador</span>
+          <small>Sube la tensión, no pierde el control.</small>
+        </button>
+        <button class="humor-card" type="button" data-humor="familiar">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><path d="M21 74 80 22l59 52v58H21Z" /><circle cx="62" cy="85" r="13" /><circle cx="101" cy="85" r="13" /><path d="M58 113c18 13 42 12 58-1" /></svg>
+          <span>Familiar</span>
+          <small>Para mesas mixtas y sustos cero.</small>
+        </button>
+        <button class="humor-card" type="button" data-humor="negro">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><path d="M80 12c31 0 56 25 56 56 0 38-35 51-35 72H59c0-21-35-34-35-72 0-31 25-56 56-56Z" /><circle cx="61" cy="70" r="10" /><circle cx="99" cy="70" r="10" /><path d="M66 103h28" /></svg>
+          <span>Negro</span>
+          <small>Oscuro, medido y con público avisado.</small>
+        </button>
+      </div>
+
+      <section class="comedian-matcher" aria-live="polite">
+        <div class="matcher-copy">
+          <p class="eyebrow" id="humor-label">Absurdo</p>
+          <h2 id="humor-title">Cómicos ficticios recomendados</h2>
+          <p id="humor-description">Placeholder visual para probar cómo se verán los matches cuando el backend tenga datos reales.</p>
+          <div class="matcher-controls">
+            <button class="button button-secondary" type="button" data-card-prev>Anterior</button>
+            <button class="button button-primary" type="button" data-card-next>Siguiente</button>
+          </div>
+          <p class="fake-note">Todos los nombres actuales son ficticios. Aquí luego entrarán perfiles reales, clips, precio y disponibilidad.</p>
+        </div>
+        <div class="card-stack-shell">
+          <div class="card-stack" data-card-stack></div>
+          <p class="stack-counter" data-stack-counter>1 de 6</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="platform.js"></script>
+</body>
+</html>
